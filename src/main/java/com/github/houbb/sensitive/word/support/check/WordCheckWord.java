@@ -71,7 +71,6 @@ public class WordCheckWord extends AbstractWordCheck {
                     wordContainsTypeEnumAllow = WordContainsTypeEnum.NOT_FOUND;
                 }
             }
-
             if (WordContainsTypeEnum.CONTAINS_END.equals(wordContainsTypeEnumDeny)) {
                 maxBlack = tempLen;
                 if (failFast) {
@@ -79,7 +78,6 @@ public class WordCheckWord extends AbstractWordCheck {
                     wordContainsTypeEnumDeny = WordContainsTypeEnum.NOT_FOUND;
                 }
             }
-
             if (WordContainsTypeEnum.NOT_FOUND.equals(wordContainsTypeEnumAllow) &&
                     WordContainsTypeEnum.NOT_FOUND.equals(wordContainsTypeEnumDeny)) {
                 break;
@@ -89,7 +87,6 @@ public class WordCheckWord extends AbstractWordCheck {
         String string = stringBuilder.toString();
         String wordAllow = string.substring(0, Math.max(0, maxWhite - skipLen));
         String wordDeny = string.substring(0, Math.max(0, maxBlack - skipLen));
-
 
         return WordLengthResult.newInstance()
                 .wordAllowLen(maxWhite)

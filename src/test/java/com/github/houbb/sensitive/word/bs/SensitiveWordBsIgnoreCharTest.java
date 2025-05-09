@@ -13,7 +13,9 @@ import java.util.List;
  * @author Administrator
  * @since 0.11.0
  */
-public class SensitiveWordBsIgnoreCharTest {
+public class
+
+SensitiveWordBsIgnoreCharTest {
 
     /**
      * 忽略中文繁简体

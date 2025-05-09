@@ -30,6 +30,9 @@ public final class WordReplaces {
     public static IWordReplace chars() {
         return new WordReplaceChar();
     }
+    public static IWordReplace AI() {
+        return new WordReplaceAI();
+    }
 
     /**
      * 字符，默认为 *
